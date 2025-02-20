@@ -1,0 +1,435 @@
+/*Estilos del árbol genealógico del comité de empresa*/
+#header{
+  z-index: 100000000000000000000000000000000000000000000;
+}/*Así evitamos que la fecha de las noticias se sobreponga al pasar en el header haciendo scroll*/
+
+
+
+.comitee-founders{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-top: 1px;
+  margin-bottom: 50px;
+}
+
+
+.img-tree-header{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+}
+
+.img-tree{
+  width: 120vw;
+  height: 75vh;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  transform: translateX(-10vw);
+}
+
+.img-tree:hover{
+  cursor: pointer;
+}
+
+.img-tree img{
+  width: 60%;
+  height: 90vh;
+}
+
+.sindicato-header{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+  transform: translateX(12.9vw);
+}
+
+.sindicato-logo{
+  width: 32vw;
+  height: 30vh;
+  justify-content: center;
+  margin: 0 auto;
+  transition: 0.3s ease;
+  margin-left: 110px;
+  transform: translateY(-15vh);
+}
+
+.sindicato-logo img{
+border-radius: 10px;
+}
+
+.convenio-header{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+  transform: translateX(12.5vw);
+  margin-top: 300px;
+}
+
+.sindicato-div{
+  width: 90vw;
+  display: flex;
+}
+
+.sindicato-div img{
+  width: 30vw;
+  transform: translateX(3vw);
+}
+
+
+.sindicato-texto h3{
+  font-family: Manrope;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+  transform: translateX(3vw);
+  transform: translateY(-5vh);
+}
+
+.sindicato-texto p{
+  width: 100%;
+  font-family: Manrope;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 60vw;
+  margin: 0 auto;
+  padding-left: 7vw;
+  transform: translateY(-15px);
+}
+
+.convenio-container{
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.convenio-img{
+  width: 30vw;
+  height: 38vh;
+  display: flex;
+  justify-content: center;
+}
+
+.convenio-img > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+
+.convenio-container h2{
+  font-family: Manrope;
+  font-size: 23px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+}
+
+.convenio-p{
+  width: 50vw;
+  font-family: Manrope;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: normal;
+  align-items: center;
+  transform: translateY(3vh);
+}
+
+.convenio-container p{
+  width: auto;
+  font-family: Manrope;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  align-items: center;
+}
+
+.acuerdos-header{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+.acuerdos-container {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 95px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.acuerdo {
+  width: 25.6vw; /* Ancho relativo */
+  margin: 10px;
+  text-align: center;
+}
+
+.acuerdo img {
+  width: 100%;
+  height: 300px;
+  max-width: 100%; /* Para que la imagen se ajuste al ancho del div */
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.acuerdo p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Manrope;
+  font-weight: bold;
+}
+
+.noticias-header{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+}
+
+.noticias-semi-header{
+  font-family: Manrope;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.noticias-general-div{
+  width: 90vw;
+  height: 550px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.noticias-div{
+  border-radius: 10px;
+  width: 25vw;
+  height: 580px;
+  margin-bottom: 50px;
+  gap: 95px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+  margin-bottom: 200px;
+}
+
+.noticia-fecha{
+  position: absolute;
+  width: 125px;
+  height: 30px;
+  background-color: #68776d;
+  z-index: 1000000000;
+  font-family: Manrope;
+  text-align: center;
+  font-weight: bold;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.noticias-img{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.noticias-img > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.noticias-titular{
+  font-family: Manrope;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.noticias-texto-p {
+  font-family: Manrope;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; /* Centra el texto horizontalmente */
+  font-weight: normal;
+  word-wrap: break-word; /* Permite que las palabras largas se rompan */
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+}
+
+.ver-mas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ver-mas-btn {
+  background-color: #68776d;
+  border: none;
+  cursor: pointer;
+  font-family: Manrope;
+  font-weight: bold;
+  border-radius: 50px;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  transition: 0.3s ease;
+  text-align: center;
+  color: white;
+}
+
+.ver-mas-btn:hover {
+  background-color: var(--mainColor);
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+
+.womentech-header{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+}
+
+#women-id{
+  object-fit: cover;
+}
+
+.women-texto {
+  width: 50vw;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  word-wrap: break-word;
+  transform: translateY(-2vh);
+  margin-bottom: 200px;
+  text-align: center;
+  max-width: 35vw;
+}
+
+.women-texto-2{
+  width: 50vw;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  word-wrap: break-word;
+  transform: translateY(-2vh);
+  margin-bottom: 200px;
+  text-align: center;
+  max-width: 35vw;
+  transform: translateY(7vh);
+
+}
+
+.huelgas-header{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+}
+
+
+.eventos-pasados-header{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-bottom: 120px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+.contact-form-extra-p{
+  margin: 30px;
+}
+
+#contact-FOL{
+  width: 90vw;
+  border-radius: 10px;
+  margin-top: 250px;
+}
+
+#contact-FOL * {
+  border-radius: 10px;
+}
+
+
+.prevencion-header{
+  font-family: Manrope;
+  font-size: 80px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #68776d;
+  font-weight: bold;
+}
+
+.video-container {
+  width: 100vw; /* Ancho del video */
+  height: 600px; /* Alto del video */
+  background: url('vid/Fol Coffee ‐ Hecho con Clipchamp (3).mp4') no-repeat;
+  background-size: cover; /* Ajusta el tamaño para cubrir el contenedor */
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.video-container > video {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+

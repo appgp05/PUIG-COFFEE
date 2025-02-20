@@ -1,0 +1,162 @@
+#shoppingcart {
+    width: 40vw;
+    height: calc(100vh - 60px); /* Resta la altura de la barra superior */
+    position: fixed;
+    left: 0;
+    top: 60px;
+    transform: translateX(vw);
+    z-index: 1000;
+    background-color: var(--mainColor);
+    opacity: 0.95;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#shoppingcart > #cartflex{
+    margin-top: 50px;
+
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    overflow-y: auto; /* Añadir barra de desplazamiento vertical */
+    margin-bottom: 50px;
+}
+
+#shoppingcart > #cartflex > .item-card{
+    margin-top: 30px;
+    background-color: #68776d;
+    width: 90%;
+
+    padding: 5px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    gap: 20px;
+
+    opacity: 1;
+
+    align-items: center;
+    border-radius: 50px;
+
+}
+#shoppingcart > #cartflex > .item-card > .img{
+    width: 40px;
+    height: 40px;
+
+    background-color: rgb(59, 59, 59);
+
+    border-radius: 20px;
+}
+#shoppingcart > #cartflex > .item-card > .name{
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 25px;
+}
+
+#shoppingcart > #cartflex > .item-card > .itemprice{
+    width: 100px;
+    height: 25px;
+
+    background-color: white;
+
+    border: 0px;
+    border-radius: 2px;
+    
+    text-align: center;
+    font-weight: bold;
+
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: Manrope;
+}
+#shoppingcart > #cartflex > .item-card > .totalprice{
+    width: 50px;
+    height: 25px;
+
+    background-color: white;
+
+    border: 0px;
+    border-radius: 2px;
+    
+    font-weight: bold;
+
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: Manrope;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+}
+
+
+#shoppingcart > #cartflex > .item-card > .button{
+    width: 70px;
+    height: 25px;
+    background-color: white;
+
+    border: 0px;
+    border-radius: 2px;
+    
+    text-align: center;
+    font-weight: bold;
+
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: Manrope;
+    margin: 0 auto;
+    margin: -5px;
+}
+
+
+
+#shoppingcart > #buycart{
+    display: flex;
+    flex-direction: column;
+}
+#shoppingcart > #cartflex > #cartguide > div{
+    background-color: antiquewhite;
+    position: fixed;
+}
+
+/*Estilos de la parte inferior del carrito*/
+.total-price{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#buttonCloseShoppingCart{
+    width: 50px;
+    height: 40px;
+    background-color: red;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: #68776d;
+    transition: 0.3s ease;
+    transform: translateY(-3vh);
+}
+
+#buttonCloseShoppingCart:hover{
+    background-color: white;
+    color: #68776d;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#buttonshowTicketsWindows{
+    text-align: center;
+    font-weight: bold;
+}

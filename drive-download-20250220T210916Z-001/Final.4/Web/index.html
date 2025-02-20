@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!--  CSS GENÉRICO  -->
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/root.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/scrollbar.css'>
+
+    <!--  CSS ESPECÍFICO  -->
+
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/headerwrapper.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/headerpublicity.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/shoppingcart.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/coffeeselling.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/footer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/loginwindow.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/registerwindow.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/categoryBar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/testimonials.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/cardcontainer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/form.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/ticket.css'>
+    <!--  ESTILOS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+
+    <!--
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/root.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/scrollbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/headerpublicity.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/shoppingcart.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/coffeeselling.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/footer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/loginwindow.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/registerwindow.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/categoryBar.css'>
+    -->
+</head>
+<body>
+  
+
+  <!--<div id="header">
+	  <div class="logo">
+      <img src="../img/PUIG-COFFEE-LOGO.png" alt="Logo de la marca">
+    </div>
+    
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" onclick="teste()">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" onclick="logout()">logout</a></li>
+        <li><a href="#" onclick="setUserProperties(`Sergio`)">set</a></li>
+        <li><a href="#" onclick="getUserProperties()">get</a></li>
+
+        <li id="homeButton"><a href="index.html">Home</a></li>
+        <li id="intranetButton"><a href="intranet.html" >Intranet</a></li>
+        <li><a href="#"><div onclick="showLoginWindow()">Login</div></a></li>
+        <li><a href="#" onclick="showShoppingCart()" id="buttonShoppingCart">ShoppingCart</a></li>
+      </ul>            
+    </nav>
+
+    <nav class="header-buttons">
+      <a class="btn" href="#" onclick="showLoginWindow()">
+        <button>
+            <img src="./img/login-logo.png" alt="Login">
+        </button>
+      </a>
+    
+    <a class="btn" href="#" onclick="showShoppingCart()" id="buttonShoppingCart">
+      <button>
+          <img src="https://cdn-icons-png.flaticon.com/512/4305/4305700.png" alt="Shopping Cart">
+      </button>
+      </a>
+      </nav>
+    
+  </div>-->
+
+  
+  <header id="header">
+    <div class="logo">
+      <a href="index.html"><img src="./img/PUIG-COFFEE-LOGO.PNG" alt="Logo de la marca"></a>
+    </div>
+    <nav>
+       <ul class="nav-links">
+           <!-- <li><a onclick="logout()">logout</a></li>
+            <li><a onclick="setUserProperties(`Sergio`)">set</a></li>
+            <li><a onclick="getUserProperties()">get</a></li>-->
+            <li><a href="index.html">Home</a></li>
+            <li><a onclick="scrollToSection('categoryBar', -100)">Products</a></li>
+            <li id="intranetButton"><a href="intranet.html" >Intranet</a></li>
+       </ul>            
+    </nav>
+
+    <nav class="header-buttons">
+      <a class="btn" onclick="showLoginWindow()">
+        <button>
+           <p>Login</p> 
+        </button>
+      </a>
+    
+    <a class="btn" onclick="showShoppingCart()" id="buttonShoppingCart">
+      <button>
+          <p>Cart</p>
+      </button>
+      </a>
+      </nav>
+    
+</header>
+
+
+<!--Ventana Inicio Sesión-->
+<div id="loginwindow">
+  <div class="windowbuttons">
+    <button class="closebutton" onclick="closeLogin()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M3.354 3.354a.5.5 0 0 1 .708 0L8 7.293l4.948-4.95a.5.5 0 1 1 .708.708L8.707 8l4.95 4.948a.5.5 0 0 1-.708.708L8 8.707l-4.95 4.95a.5.5 0 0 1-.708-.708L7.293 8 2.354 3.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+  </button>
+  
+  </div>
+
+  <div id="loginflex">
+    <!--
+    <p>LOGIN</p>
+    <div id="credentials">
+      <input type="text" placeholder="Name" class="name">
+      <input type="password" placeholder="Password" class="password">
+      <input type="text" placeholder="Address" class="address">
+      <button onclick="login()">LOGIN</button>
+      <p>Don't have an account? Register one. <a href="#" onclick="showRegisterWindow()">Click here</a></p>
+        <datalist id="rol">
+          <option value="Employee"></option>
+          <option value="Client"></option>
+        </datalist>
+    </div>
+    -->
+    <!--
+    <p>Sesión iniciado con éxito</p>
+    <div id="credentials">
+      <p>Name</p>
+      <p>Address</p>
+      <p>Rol</p>
+      <button onclick="logout()">LOGOUT SESSION</button>
+    </div>-->
+  </div>
+</div>
+
+<div id="registerwindow">
+  <div class="windowbuttons">
+    <button class="backbutton" onclick="backRegister()">Back</button>
+    <button class="closebutton" onclick="closeRegister()">X</button>
+  </div>
+
+  <div id="registerflex">
+    <h2 class="register-title">Register</h2>
+    <div id="credentials">
+      <input type="text" placeholder="Name" class="name">
+      <h3 class="register-mini-header">Password</h3>
+      <input type="password" placeholder="Password" class="password">
+      <h3 class="register-mini-header">Address</h3>
+      <input type="text" placeholder="Address" class="address">
+      <!--<input type="text" placeholder="Account type" list="rol" class="type">-->
+      <!--<input type="text" placeholder="Employee code (Only for employeers)" class="code">-->
+      <button onclick="register()" class="register-button">Register</button>
+        <datalist id="rol">
+          <option value="Employeer"></option>
+          <option value="Client"></option>
+        </datalist>
+      </div>
+  </div>
+</div>
+
+
+<!--Publicidad de debajo del header, formato slider-->
+<div id="default-carousel" class="relative w-5/6 mx-auto" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-[800px] overflow-hidden rounded-lg md:h-[800px]">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./img/edit-puig.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./img/headerpublicity2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./img/headerpublicity3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./img/headerpublicity4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./img/headerpublicity5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  </div>
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+
+
+<h1 class="top-coffees">Top Coffees</h1>
+<div id="categoryBar">
+  <div id="categoryBarFlex">
+      <!--
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      -->
+  </div>
+</div>
+
+
+
+<div id="shoppingcart">
+  <div id="cartflex">
+      <div class="item-card">
+        <div class="img"></div>
+        <div class="name">Loading...</div>
+        <button class="button"> - </button>
+        <input type="text" class="button" value="0">
+        <button class="button"> + </button>
+      </div>
+  </div>
+  <div id="buycart">
+    <p class="total-price">Total price:</p>
+    <button onclick="closeShoppingCart()" id="buttonCloseShoppingCart">Buy</button>
+    <button onclick="showTicketsWindow()" id="buttonshowTicketsWindows">Tickets</button>
+  </div>
+</div>
+
+
+
+<div id="tickets">
+  <div class="windowbuttons">
+    <button class="closebutton" onclick="closeTickets()">X</button>
+  </div>
+  <div id="ticketsflex">
+    <div class="ticket-card">
+      <div class="info">
+        <p class="id">ID: </p>
+        <p class="date">Opening Date: </p>
+        <p class="opened">Opened: </p>
+        <p>Items: 100</p>
+      </div>
+      <button class="button">View Products</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="ticketitems">
+  <div class="windowbuttons">
+    <button class="closebutton" onclick="closeTicketItems()">X</button>
+  </div>
+  <div id="ticketitemsflex">
+    <div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div id="coffeeselling">
+  <div id="coffee-flex">
+    <!--<div class="coffee-card">
+      <div class="img-container">
+        <img src="" alt="Coffee Image">
+      </div>
+      <p class="name">fgjhg</p>
+      <p class="description"></p>
+      <button class="buy-btn" onclick="addToCart(1)"></button>
+      <p class="price"></p>
+    </div>-->
+  </div>
+</div>
+
+<!--
+<main class="main-section">
+
+</main>
+-->
+
+<p class="testimonials-header">Testimonials</h1>
+  <!--Sección de opiniones-->
+  <div class="wrapper">
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>Puig Coffee captivates to crafting premium coffee blends, creating a warm and inviting ambiance that beckons coffee aficionados to savor the cozy experience of indulgence and relaxation.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Fernando Lonsez</div>
+          <div class="job">Designer | Developer</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./img/TESORERO.jfif" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>The captivating flavors of Puig Coffee's brews offer a delightful blend of rich, nuanced notes that elevate the coffee experience to a new level, leaving a lasting impression on discerning palates.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">George Roses</div>
+          <div class="job">Tech Lead | Blogger</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./img/VOCAL1.jfif" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left  quote"></i>
+      <p>The products at Puig Coffee evoke a wonderful sense of comfort, creating moments of relaxation with each sip or bite, making it a delightful retreat for coffee lovers and food enthusiasts alike.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Nicholas Latifi</div>
+          <div class="job">Freelancer | Advertiser</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./img/VOCAL2.jfif" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>The intense flavors of Puig Coffee take you on a tasty journey, awakening your senses and creating a great adventure that lingers long after the last drop, making every visit a memorable experience.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Logan Sargeant</div>
+          <div class="job">YouTuber | Blogger</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./img/VOCAL3.jfif" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Dónde encontrarnos-->
+  <h1 class="wheretofindus">Visit us!</h1>
+  <div class="wheretofinduscontainer">
+    <div class="flex flex-col justify-center h-screen">
+      <div class="max-w-[90vw] mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+              <div class="relative flex flex-col rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white mb-5">
+                <div class="location-img">
+                  <img src="./img/puig1.jpg" alt="Union Square" class="w-full h-60 object-cover">
+                </div>
+                  <div class="p-4">
+                      <h1 class="text-xl  font-bold text-gray-800 text-center">Union Square</h1>
+                      <p class="text-sm text-gray-600  text-center">333 Post St, San Francisco, CA 94108</p>
+                        <!--
+                      <div class="btn-container">
+                        <button class="wheretofindus-btn">Contact</button>
+                      </div>
+                      -->
+                  </div>
+              </div>
+              <div class="relative flex flex-col rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white mb-5">
+                <div class="location-img">
+                  <img src="./img/puig2.jpg" alt="Union Square" class="w-full h-60 object-cover">
+                </div>
+                  <div class="p-4">
+                      <h1 class="text-xl font-bold text-gray-800 text-center">Fisherman's Wharf</h1>
+                      <p class="text-sm text-gray-600 text-center">286 Jefferson St, San Francisco, CA 94133</p>
+                      <div class="btn-container">
+                        <!--
+                      <div class="btn-container">
+                        <button class="wheretofindus-btn">Contact</button>
+                      </div>
+                      -->
+                      </div>
+                  </div>
+              </div>
+              <div class="relative flex flex-col rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white mb-5">
+                <div class="location-img">
+                  <img src="./img//puig3.jpg" alt="Union Square" class="w-full h-60 object-cover">
+                </div>
+                  <div class="p-4">
+                      <h1 class="text-xl font-bold text-gray-800 text-center">Chinatown</h1>
+                      <p class="text-sm text-gray-600 text-center">Grant Ave & Bush St, San Francisco, CA 94108</p>
+                      <div class="btn-container">
+                        <!--
+                      <div class="btn-container">
+                        <button class="wheretofindus-btn">Contact</button>
+                      </div>
+                      -->
+                      </div>
+                    
+                  </div>
+              </div>
+              <div class="relative flex flex-col rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white mb-5">
+                <div class="location-img">
+                  <img src="./img/puig4.jpg" alt="Union Square" class="w-full h-60 object-cover">
+                </div>
+                  <div class="p-4">
+                      <h1 class="text-xl font-bold text-gray-800 text-center">Mission District</h1>
+                      <p class="text-sm text-gray-600 text-center">Valencia St & 18th St, San Francisco, CA 94110</p>
+                      <div class="btn-container">
+                        <!--
+                      <div class="btn-container">
+                        <button class="wheretofindus-btn">Contact</button>
+                      </div>
+                      -->
+                      </div>
+                   
+                  </div>
+              </div>
+              <div class="relative flex flex-col rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white mb-5">
+                <div class="location-img">
+                  <img src="./img/puig5.jpg" alt="Union Square" class="w-full h-60 object-cover">
+                </div>
+                  <div class="p-4">
+                      <h1 class="text-xl font-bold text-gray-800 text-center">Embarcadero</h1>
+                      <p class="text-sm text-gray-600 text-center">The Embarcadero, San Francisco, CA 94111</p>
+                      <div class="btn-container">
+                        <!--
+                      <div class="btn-container">
+                        <button class="wheretofindus-btn">Contact</button>
+                      </div>
+                      -->
+                      </div>
+                     
+                  </div>
+              </div>
+              <div class="relative flex flex-col rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white mb-5">
+                <div class="location-img">
+                  <img src="./img/puig6.jpg_large.jpg" alt="Union Square" class="w-full h-60 object-cover">
+                </div>
+                  <div class="p-4">
+                      <h1 class="text-xl font-bold text-gray-800 text-center">Haight-Ashbury</h1>
+                      <p class="text-sm text-gray-600 text-center">Haight St & Ashbury St, San Francisco, CA 94117</p>
+                      <div class="btn-container">
+                        <!--
+                      <div class="btn-container">
+                        <button class="wheretofindus-btn">Contact</button>
+                      </div>
+                      -->
+                      </div>
+                     
+                  </div>
+              </div>
+              <div class="relative flex flex-col rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white mb-5">
+                <div class="location-img">
+                  <img src="./img/puig7.jpg_large.jpg" alt="Union Square" class="w-full h-60 object-cover">
+                </div>
+                  <div class="p-4">
+                      <h1 class="text-xl font-bold text-gray-800 text-center">Ghirardelli Square</h1>
+                      <p class="text-sm text-gray-600 text-center">900 North Point St, San Francisco, CA 94109</p>
+                      <div class="btn-container">
+                        <!--
+                      <div class="btn-container">
+                        <button class="wheretofindus-btn">Contact</button>
+                      </div>
+                      -->
+                      </div>
+                  </div>
+              </div>
+              <div class="relative flex flex-col rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white mb-5">
+                <div class="location-img">
+                  <img src="./img/puig8.jpg" alt="Union Square" class="w-full h-60 object-cover">
+                </div>
+                  <div class="p-4">
+                      <h1 class="text-xl font-bold text-gray-800 text-center">Hayes Valley</h1>
+                      <p class="text-sm text-gray-600 text-center">Hayes St & Octavia St, San Francisco, CA 94102</p>
+                      <div class="btn-container">
+                        <!--
+                      <div class="btn-container">
+                        <button class="wheretofindus-btn">Contact</button>
+                      </div>
+                      -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+
+  <div class="contact-in">
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.02982613167!2d-122.47879947475269!3d37.75776068865792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1713611633961!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact-form">
+      <h1>Contact us</h1>
+      <form>
+        <input type="text" placeholder="Name" class="contact-form-txt"/>
+        <input type="text" placeholder="Email" class="contact-form-txt"/>
+        <textarea placeholder="Message" class="contact-form-textarea"></textarea>
+        <button class="contact-form-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <footer class="footer-sec">
+    <div class="main">
+      <div class="logo row">
+        <div class="footer-header">
+          <img src="./img/PUIG-COFFEE-LOGO.PNG" class="manik" alt="Puig Coffee">
+        </div>
+        <div class="logo-des">
+          <p>Concerned about the environment, we present Puig Coffe, a website for enjoying the best eco-friendly coffee. Discover it now!</p>
+          <a href="#" class="btn-know">Know More</a>
+        </div>
+      </div>
+             
+      <div class="office row">
+        <div class="footer-header">
+          <h3>Inquiries</h3>
+        </div>
+        <div class="office-des">
+          <p>Here are <br> many ways of connecting<br>with the most eco-friendly<br>admins</p>
+          <a href="#">puigcoffee@hotmail.com</a>
+          <p class = "num">+34 123 456 789</p>
+        </div>
+      </div>
+            
+            
+      <div class="link row">
+        <div class="footer-header">
+          <h3>Links</h3>
+        </div>
+        <div class="link-des">
+          <a href="#" class="footer-links">Home</a>
+          <a href="#" class="footer-links">About</a>
+          <a href="#" class="footer-links">Services</a>
+          <a href="#" class="footer-links">Gallery</a>
+          <a href="#" class="footer-links">Contact</a>
+        </div>
+      </div>
+               
+      <div class="newsletter row">
+        <div class="footer-header">
+          <h3>Reach Us</h3>
+          <div class="icons">
+            <a href="#"><i class="social-icon ri-facebook-fill"></i></a>
+            <a href="#"><i class="social-icon ri-instagram-line"></i></a>
+            <a href="#"><i class="social-icon ri-linkedin-fill"></i></a>
+            <a href="#"><i class="social-icon ri-github-line"></i></a> 
+          </div>
+        </div>
+      </div>
+  
+    </div>
+      <div class="copyright">
+        <hr>
+        
+        <p>© Copyright 2024 Alberto Puig & Sergio Valer.</p>
+      </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<script src="js/generic.js"></script>
+
+<script src="js/query-selectors.js"></script>
+
+<script src="js/coffee-selling/buttons.js"></script>
+<script src="js/coffee-selling/index.js"></script>
+
+<script src="js/header/header.js"></script>
+<script src="js/header/category-bar.js"></script>
+<script src="js/header/hearderpublicity.js"></script>
+
+<script src="js/login/funcionality.js"></script>
+<script src="js/login/window-managing.js"></script>
+
+<script src="js/register/funcionality.js"></script>
+<script src="js/register/window-managing.js"></script>
+
+<script src="js/shoppingcart/buttons.js"></script>
+<script src="js/shoppingcart/shoppingcart-list.js"></script>
+
+<script src="js/tickets/funcionality.js"></script>
+<script src="js/tickets/window-managing.js"></script>
+
+<script src="js/cache-variables.js"></script>
+
+<script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+
+<script
+  type="text/javascript"
+  src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+.header-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .header-wrapper h1 {
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #68776d;
+    width: 100vw;
+    font-family: 'Manrope', sans-serif; /* Manrope como fuente */
+    font-weight: bold;
+  }
+  
+  .header-wrapper .team {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .header-wrapper .team .team_member {
+    font-size: 16px;
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 830px;
+    height: 400px;
+    line-height: 20px;
+    color: #000;
+    position: relative;
+    margin: 30px;
+    justify-content: center;
+    transition: 0.3s ease;
+  }
+
+  .header-wrapper .team .team_member p{
+    font-size: 18px;
+  }
+
+  .header-wrapper .team .team_member:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
+  
+  .header-wrapper .team .team_member h3 {
+    color: #68776d;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  
+  .header-wrapper .team .team_member p.role {
+    color: #000;
+    margin: 12px 0;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .header-wrapper .team .team_member img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 150px;
+    border-radius: 100%;
+    background: #fff;
+  }
+  
+  .header-wrapper .team .team_member .team_img img {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    object-fit: cover;
+  }
+
+  .team_member {
+    background-color: #fff;
+    border-radius: 10px; /* Añadimos el borde redondeado al borde exterior */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }

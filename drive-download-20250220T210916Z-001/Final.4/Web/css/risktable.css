@@ -1,0 +1,6 @@
+#risktable{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    scale: 0.8;
+}

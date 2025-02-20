@@ -1,0 +1,71 @@
+.wheretofindus{
+    margin-top: 80px;
+    margin-bottom: -30px;
+    font-size: 70px;
+    color: #68776d;
+    font-family: Manrope;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.wheretofinduscontainer{
+    margin-top: 50px;
+}
+
+/*Estilos adicionales para el contenedor del botón*/
+.btn-container{
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Cambiar el color de fondo de bg-blue-500 a rgb(161, 185, 168) */
+
+/* Estilo para los botones */
+
+.wheretofindus-btn{
+  width: 80px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.btn-container button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--mainColor);
+    transition: 0.3s ease;
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .btn-container button p{
+    font-family: Manrope;
+    font-weight: bold;
+    font-size: 20px;
+    height: 20px;
+  }
+
+  .btn-container button:hover {
+    background-color: var(--mainColor);
+    transition: 0.3s ease;
+  }
+
+
+
+/*Efectos adicionales de las fotografías de las localizaciones*/
+
+  .location-img img {
+    transition: 0.3s ease; /* Transición suave */
+  }
+  
+  .location-img img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,168 @@
+
+/*#coffeeselling{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--mainColor);
+}
+
+#coffeeselling > #coffee-flex{
+    width: 80vw;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 50px;
+
+    justify-content: space-between;
+
+    margin-left: calc(50vw - 80vw/2);
+}
+
+#coffeeselling > #coffee-flex > .coffee-card{
+    width: 100px;
+    height: 160px;
+
+    border: 5px var(--borders) solid;
+    border-radius: 10px;
+
+    background-color: var(--secondaryColor);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 0px 10px 8px var(--shadows);
+}
+
+
+
+#coffeeselling > #coffee-flex > #coffee-card > #img{
+    width: 50px;
+    height: 100px;
+
+    border: 5px rgb(255, 0, 0) solid;
+}
+
+
+
+#coffeeselling > #coffee-flex #coffee-card{
+    width: 50px;
+    height: 100px;
+
+    background-color: var(--secondaryColor);
+
+    border: 5px rgb(255, 0, 0) solid;
+}
+
+
+/*
+    <div id="coffee-card">
+        <div id="img"></div>
+        <p id="name"></p>
+        <p id="description"></p>
+        <p id="price"></p>
+    </div>
+*//*ANTIGUO CSS ALBERTO DE CARDS*/
+
+body{
+    background-color: #eee7e7;
+}
+#coffeeselling {
+    margin: 20px; /* Margen alrededor del contenedor */
+  }
+
+#coffee-flex {
+  width: 83vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-around;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 50px;
+  margin: 0 auto;
+}
+
+.coffee-card {
+    width: 220px;
+    height: 320px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-top-left-radius: 100px; /* Radio de borde en la parte superior izquierda */
+    border-top-right-radius: 100px; /* Radio de borde en la parte superior derecha */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+  .img-container {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.5s;
+  }
+  
+  .img-container img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Manrope;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: Manrope;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Manrope;
+  }
+  
+   /* Estilos para el botón "Buy Now" */
+   .buy-btn {
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 20px;
+    height: 11%;
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-family: Manrope;
+    display: block; /* Para que el margen automático funcione */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+  /* Estilos para el botón al pasar el cursor sobre él */
+  .buy-btn:hover {
+    background-color: #68776d; /* Cambia el color de fondo al pasar el cursor */
+  }

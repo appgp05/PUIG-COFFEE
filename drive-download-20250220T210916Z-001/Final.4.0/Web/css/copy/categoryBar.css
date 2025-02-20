@@ -1,0 +1,18 @@
+#categoryBar{
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(153, 0, 0);
+
+    position: fixed;
+    top: 60px;
+
+    z-index: 3;
+
+    transition: 0.5s;
+}
+#categoryBar > #categoryBarFlex{
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -1,0 +1,146 @@
+#registerwindow {
+    width: 500px;
+    height: 450px;
+    position: fixed;
+    box-shadow: 0px 0px 10px 10px rgba(85, 85, 85, 0.5);
+    left: calc(50vw - 250px);
+    top: calc(50vh - 185px);
+    z-index: 1000;
+    text-align: center;
+    font-family: Manrope;
+    transform: translateX(1.8vw);
+    border-radius: 10px;
+    background-color: #eee7e7;
+}
+
+.register-button{
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  font-weight: bold;
+  margin:0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.register-mini-header{
+    text-align: left;
+}
+.register-title{
+    font-family: Manrope;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Estilos para los botones dentro del contenedor */
+.windowbuttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .backbutton,
+  .closebutton {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .closebutton {
+    background-color: #ff6347; /* Un rojo brillante para el botón de cerrar */
+  }
+  /* Estilos para el formulario de registro */
+  #registerflex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #registerflex p {
+    text-align: center;
+  }
+  
+  #credentials {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  button {
+    background-color: var(--mainColor); /* Puedes definir esto en tu CSS principal */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .register-button{
+    background-color: var(--mainColor);
+  }
+  
+  button:hover {
+   
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para el texto "Don't have an account?" */
+  .dont-have-account {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--mainColor); /* Usar el color principal */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .dont-have-account:hover {
+    color: #68776d; /* Cambiar el color al pasar el ratón */
+  }
+
+  
+
+  /*Estilos para el popup de sweetlaert2 con el éxito o fracaso del registro*/
+  .sweet-alert-custom {
+    width: 350px;
+    height: 350px;
+    position: fixed;
+    margin: 0 auto;
+    left: calc(50vw - 175px);
+    top: calc(50vh - 135px);
+    z-index: 1000;
+    font-family: Manrope;
+    transform: translateX(1.8vw);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(85, 85, 85, 0.5);
+  }
+
+  .sweet-alert-custom .swal-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .sweet-alert-btn-custom{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    font-weight: bold;
+    padding: 5px;
+  }
+

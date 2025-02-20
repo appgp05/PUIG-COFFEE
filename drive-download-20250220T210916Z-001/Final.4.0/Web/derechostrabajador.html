@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Puig Coffee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="./img/PUIG-COFFEE-LOGO.PNG">
+
+    <!--  CSS GENÉRICO  -->
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/root.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/scrollbar.css'>
+
+    <!--  CSS ESPECÍFICO  -->
+
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/headerwrapper.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/headerpublicity.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/shoppingcart.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/coffeeselling.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/footer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/loginwindow.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/registerwindow.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/categoryBar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/testimonials.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/cardcontainer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/form.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/ticket.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/intranet.css'>
+    <!--  ESTILOS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header id="header">
+    <div class="logo">
+      <a href="index.html"><img src="./img/PUIG-COFFEE-LOGO.PNG" alt="Logo de la marca"></a>
+    </div>
+    <nav>
+       <ul class="nav-links">
+            <!--<li><a onclick="logout()">logout</a></li>
+            <li><a onclick="setUserProperties(`Sergio`)">set</a></li>
+            <li><a onclick="getUserProperties()">get</a></li>-->
+            <li><a href="index.html">Home</a></li>
+            <li id="intranetButton"><a href="intranet.html" >Intranet</a></li>
+            
+            <li><a href="derechostrabajador.html">Derechos trabajadores</a></li>
+            <li><a href="novedades.html">Novedades y eventos</a></li>
+            <li><a href="sugerencias.html">Sugerencias</a></li>
+            <li><a href="prevencionriegos.html">Prevención de riesgos laborales</a></li>  
+        </ul>            
+    </nav>
+
+    <nav class="header-buttons">
+      <a class="btn" href="#" onclick="showLoginWindow()">
+        <button>
+           <p>Login</p> 
+        </button>
+      </a>
+    </nav>
+    
+</header>
+
+  
+
+<!--Ventana Inicio Sesión-->
+<div id="loginwindow">
+  <div class="windowbuttons">
+    <button class="backbutton" onclick="backLogin()">Back</button>
+    <button class="closebutton" onclick="closeLogin()">X</button>
+  </div>
+
+  <div id="loginflex">
+  </div>
+</div>
+
+<div id="registerwindow">
+  <div class="windowbuttons">
+    <button class="backbutton" onclick="backRegister()">Back</button>
+    <button class="closebutton" onclick="closeRegister()">X</button>
+  </div>
+
+  <div id="registerflex">
+    <p>Register</p>
+    <div id="credentials">
+      <input type="text" placeholder="Name" class="name">
+      <input type="text" placeholder="Password" class="password">
+      <input type="text" placeholder="Address" class="address">
+      <input type="text" placeholder="Account type" list="rol" class="type">
+      <input type="text" placeholder="Employee code (Only for employeers)" class="code">
+      <button onclick="register()">REGISTER</button>
+        <datalist id="rol">
+          <option value="Employeer"></option>
+          <option value="Client"></option>
+        </datalist>
+      </div>
+  </div>
+</div>
+
+
+<!--Árbol genalógico del comité de empresa-->
+
+<h1 class="img-tree-header">Comité De Empresa</h1>
+<div class="img-tree">
+  <img src="./img/bueno-arbol.png">
+</div>
+
+<h1 class="convenio-header">Convenio Colectivo</h1>
+<div class="convenio-container">
+  <div class="convenio-img">
+    <img src="./img/foto-convenio-consultoria.jpg">
+  </div>
+  <div class="convenio-texto">
+    <h2>Convenio colectivo del sector de Hostelería</h2>
+    <div class="convenio-p">
+      <p><b>-Jornada anual:</b> Duración de 1776 horas anuales de trabajo efectivo</p>
+    <p><b>-Vacaciones:</b> 30 días naturales por año</p>
+    <p><b>-Pagas extraordinarias:</b> Dos, en julio y en diciembre</p>
+    <p><b>-Locomoción:</b> 0.25€ por kilómetro</p>
+    <p><b>-Atuendo:</b> De obligada reposición tras daños o desgastes</p>
+    </div>
+  </div>
+</div>
+
+<h1 class="acuerdos-header">Acuerdos</h1>
+<div class="acuerdos-container">
+  <div class="acuerdo">
+    <img src="./img/trabajo-remoto.avif">
+    <p>Trabajo remoto</p>
+  </div>
+  <div class="acuerdo">
+    <img src="./img/perifericos-alta-gama.jfif">
+    <p>Periféricos de gama alta </p>
+  </div>
+  <div class="acuerdo">
+    <img src="./img/paga-extra.jpg">
+    <p>Dos pagas extras adicionales en enero y mayo</p>
+  </div>
+  <div class="acuerdo">
+    <img src="./img/flexibilidad-horario.webp">
+    <p>Flexibilidad de horario laborable</p>
+  </div>
+  <div class="acuerdo">
+    <img src="./img/salidas-empresariales.webp">
+    <p>Salidas empresariales</p>
+  </div>
+  <div class="acuerdo">
+    <img src="./img/gafas-gratuitas.jpg">
+    <p>Gafas gratuitas</p>
+  </div>
+</div>
+
+<h1 class="womentech-header">Congreso WomenTech</h1>
+<div class="convenio-container">
+  <div class="convenio-img" id="women-id">
+    <img src="./img/women-real-photo.jpg">
+  </div>
+  <div class="women-texto">
+    <p>WomenTech es una plataforma global desarrollada por Puig Coffee que
+       promueve la participación activa de mujeres en la industria tecnológica.
+       A través de conferencias, programas de mentoría y eventos de networking,
+       WomenTech fomenta el desarrollo profesional y personal de las mujeres en 
+      campos como la inteligencia artificial, la programación y la ciberseguridad.
+      Esta iniciativa busca no solo cerrar la brecha de género en el sector, sino
+      también potenciar la diversidad de ideas y perspectivas.<br>
+      <br>
+      Al ofrecer oportunidades de aprendizaje y liderazgo, WomenTech contribuye al avance
+       y la innovación en la era digital, destacando el papel fundamental de las mujeres 
+       en este campo en constante evolución.
+    </p>
+  </div>
+</div>
+
+<h1 class="huelgas-header">Huelgas</h1>
+<div class="convenio-container">
+  <div class="convenio-img" id="women-id">
+    <img src="./img/gente-vaga-no-trabajando.jpg">
+  </div>
+  <div class="women-texto-2" id="women-text">
+    <p>
+      El próximo 20 de mayo, como profesionales del sector TI en Puig Coffee,
+      llevaremos a cabo una huelga. Demandaremos un aumento salarial y la 
+      incorporación de material ergonómico y digno en nuestras oficinas. Esta acción
+      busca mejorar nuestras condiciones laborales y calidad de vida en nuestro fundamental trabajo.
+    </p>
+  </div>
+</div>
+
+
+
+  
+  <footer class="footer-sec">
+    <div class="main">
+      <div class="logo row">
+        <div class="footer-header">
+          <img src="./img/PUIG-COFFEE-LOGO.PNG" class="manik" alt="Puig Coffee">
+        </div>
+        <div class="logo-des">
+          <p>Concerned about the environment, we present Puig Coffe, a website for enjoying the best eco-friendly coffee. Discover it now!</p>
+          <a href="#" class="btn-know">Know More</a>
+        </div>
+      </div>
+             
+      <div class="office row">
+        <div class="footer-header">
+          <h3>Inquiries</h3>
+        </div>
+        <div class="office-des">
+          <p>Here are <br> many ways of connecting<br>with the most eco-friendly<br>admins</p>
+          <a href="#">puigcoffee@hotmail.com</a>
+          <p class = "num">+34 123 456 789</p>
+        </div>
+      </div>
+            
+            
+      <div class="link row">
+        <div class="footer-header">
+          <h3>Links</h3>
+        </div>
+        <div class="link-des">
+          <a href="#" class="footer-links">Home</a>
+          <a href="#" class="footer-links">About</a>
+          <a href="#" class="footer-links">Services</a>
+          <a href="#" class="footer-links">Gallery</a>
+          <a href="#" class="footer-links">Contact</a>
+        </div>
+      </div>
+               
+      <div class="newsletter row">
+        <div class="footer-header">
+          <h3>Reach Us</h3>
+          <div class="icons">
+            <a href="#"><i class="social-icon ri-facebook-fill"></i></a>
+            <a href="#"><i class="social-icon ri-instagram-line"></i></a>
+            <a href="#"><i class="social-icon ri-linkedin-fill"></i></a>
+            <a href="#"><i class="social-icon ri-github-line"></i></a> 
+          </div>
+        </div>
+      </div>
+  
+    </div>
+      <div class="copyright">
+        <hr>
+        
+        <p>© Copyright 2024 Alberto Puig & Sergio Valer.</p>
+      </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<script src="js/query-selectors.js"></script>
+
+<script src="js/coffee-selling/buttons.js"></script>
+<script src="js/coffee-selling/index.js"></script>
+
+<script src="js/header/category-bar.js"></script>
+<script src="js/header/hearderpublicity.js"></script>
+
+<script src="js/login/funcionality.js"></script>
+<script src="js/login/window-managing.js"></script>
+
+<script src="js/register/funcionality.js"></script>
+<script src="js/register/window-managing.js"></script>
+
+<script src="js/shoppingcart/buttons.js"></script>
+<script src="js/shoppingcart/shoppingcart-list.js"></script>
+
+<script src="js/tickets/funcionality.js"></script>
+<script src="js/tickets/window-managing.js"></script>
+
+<script src="js/cache-variables.js"></script>
+
+<script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+
+<script
+  type="text/javascript"
+  src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    /*  Cafés*/
+    overflow-x: hidden;
+    --mainColor: rgb(161, 185, 168);/*Por ahora solo he hecho por variables lo que tiene este color, tengo que cabar con los demás colores XD*/
+    --secondaryColor: rgb(54, 54, 54);
+    --borders: rgb(78, 78, 78);
+    --shadows: rgb(0, 0, 0);
+
+    /*  Carrito compra*/
+    --shoppingList: rgb(0, 0, 0);
+    --shoppingListOpacity: rgba(190, 162, 118, 0.95);
+    --shoppingItem: rgb(190, 149, 82);
+}

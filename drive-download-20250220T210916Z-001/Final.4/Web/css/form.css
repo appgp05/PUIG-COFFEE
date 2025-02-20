@@ -1,0 +1,87 @@
+.contact-in {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    font-family: Manrope;
+    font-weight: bold;
+}
+
+.contact-in * {
+    border-radius: 10px;
+}
+
+.contact-map {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    border-radius: 10px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contact-form {
+    width: 100%;
+    height: auto; /* Cambiado a auto para ajustarse al contenido */
+    flex: 50%;
+    text-align: center;
+    font-family: Manrope;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Aumentado margen inferior */
+}
+
+.contact-form h1 {
+    margin-bottom: 10px;
+    color: #68776d;
+    font-size: 70px;
+}
+
+.contact-form-txt {
+    width: 90%;
+    height: 60px; /* Aumentado el alto */
+    color: #000;
+    border: 1px solid #68776d;
+    outline: none;
+    margin-bottom: 30px; /* Aumentado margen inferior */
+    padding: 15px;
+    font-family: Manrope;
+    border-radius: 10px;
+}
+
+.contact-form-txt::placeholder {
+    color: #68776d;
+}
+
+.contact-form-textarea {
+    width: 90%;
+    height: 180px; /* Aumentado el alto */
+    color: #000;
+    border: 1px solid #68776d;
+    outline: none;
+    margin-bottom: 30px; /* Aumentado margen inferior */
+    padding: 15px;
+    font-family: Manrope;
+    border-radius: 10px;
+}
+
+.contact-form-textarea::placeholder {
+    color: #68776d;
+}
+
+.contact-form-btn{
+    width: 70%;
+    text-align: center;
+    background-color: #68776d;
+    color:white;
+    margin-bottom: 30px; /* Aumentado margen inferior */
+}

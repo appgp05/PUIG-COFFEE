@@ -1,0 +1,174 @@
+DROP TABLE "USER";
+DROP TABLE "SHOPPINGCART";
+DROP TABLE "CARTITEM";
+DROP TABLE "COFFEE";
+DROP TABLE "CATEGORY";
+
+INSERT INTO "USER" VALUES(
+	1,
+	'Uno',
+	'uno@',
+	'uno'
+);
+
+
+
+INSERT INTO "SHOPPINGCART" VALUES(
+	1,
+	'2003/07/09',
+	'1'
+);
+INSERT INTO "SHOPPINGCART" VALUES(
+	2,
+	'2003/07/09',
+	'1'
+);
+
+
+
+INSERT INTO "CATEGORY" VALUES(
+	1,
+	'Classic'
+);
+INSERT INTO "CATEGORY" VALUES(
+	2,
+	'Decaffeinated'
+);
+INSERT INTO "CATEGORY" VALUES(
+	3,
+	'Intense'
+);
+INSERT INTO "CATEGORY" VALUES(
+	4,
+	'American'
+);
+INSERT INTO "CATEGORY" VALUES(
+	5,
+	'BIO'
+);
+
+
+
+INSERT INTO "COFFEE" VALUES(
+	1,
+	'Espresso Haven',
+	'Disfruta de una variedad de espressos intensos, desde el clásico italiano hasta mezclas exclusivas con toques de cacao o frutos secos.',
+	'',
+	1
+);
+INSERT INTO "COFFEE" VALUES(
+	2,
+	'Americano Misto',
+	'Un americano al que se le agrega leche caliente, similar a un café latte, pero con una base de espresso diluido en agua caliente en lugar de leche.',
+	'',
+	2
+);
+INSERT INTO "COFFEE" VALUES(
+	3,
+	'Americano Frío',
+	'Un americano servido sobre hielo, lo que lo convierte en una opción refrescante para los días calurosos.',
+	'',
+	3
+);
+INSERT INTO "COFFEE" VALUES(
+	4,
+	'EcoGrounds Coffee',
+	'Especializados en café cultivado de manera ecológica, sin pesticidas ni químicos, con opciones veganas y orgánicas en su menú.',
+	'',
+	4
+);
+INSERT INTO "COFFEE" VALUES(
+	5,
+	'BioBean Café',
+	'Comprometidos con la biodiversidad, ofrecen café de pequeñas cooperativas agrícolas certificadas, junto con opciones vegetarianas y sin gluten.',
+	'',
+	5
+);
+INSERT INTO "COFFEE" VALUES(
+	6,
+	'Nature's Brew',
+	'Café de comercio justo y orgánico en un ambiente natural y relajado, con opciones de desayuno y meriendas saludables y sostenibles.',
+	'',
+	1
+);
+INSERT INTO "COFFEE" VALUES(
+	7,
+	'GreenLeaf Coffee',
+	'omprometidos con la agricultura sostenible, ofrecen café certificado orgánico y biodinámico, con opciones de alimentos frescos y locales.',
+	'',
+	2
+);
+INSERT INTO "COFFEE" VALUES(
+	8,
+	'Earthly Brews',
+	'Enfoque en cafés de origen ético y métodos de tostado que respetan el medio ambiente, con opciones de bocadillos locales y orgánicos.',
+	'',
+	3
+);
+INSERT INTO "COFFEE" VALUES(
+	9,
+	'Americano con Jarabe:',
+	'Un americano al que se le añade jarabe de sabor, como vainilla, caramelo o avellana, para darle un toque dulce y aromático.',
+	'',
+	4
+);
+INSERT INTO "COFFEE" VALUES(
+	10,
+	'Largo',
+	'Similar al americano clásico, pero con más agua añadida, lo que resulta en una bebida más suave y menos concentrada.',
+	'',
+	5
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//	CAFÉS DEFINITIVOS
+
+
+INSERT INTO coffees (id, name, description, image_url, quantity) VALUES
+(6, 'Relaxing Decaf', 'Unwind with this soothing decaffeinated blend.', 'https://coffeesbucket.s3.amazonaws.com/Kazaar-PLP.png', 2),
+(7, 'Tranquil Moments', 'Find peace in every sip of this decaf goodness.', 'https://coffeesbucket.s3.amazonaws.com/ispirazione-roma-XL.png', 5),
+(2, 'Heritage Blend', 'Rich and smooth, a classic choice for coffee enthusiasts.', 'https://coffeesbucket.s3.amazonaws.com/C-1037-ResponsivePLPImage.png', 1),
+(3, 'Velvet Symphony', 'Indulge in the velvety richness of this medium-roast classic.', 'https://coffeesbucket.s3.amazonaws.com/C-1036-ResponsivePLPImage.png', 1),
+(4, 'Golden Sunrise', 'Wake up to the golden hues and flavors of this classic brew.', 'https://coffeesbucket.s3.amazonaws.com/C-1203-dharkan-PLPimage-2x.png', 1),
+(5, 'Sunset Elegance', 'Rich and robust, perfect for an evening of relaxation.', 'https://coffeesbucket.s3.amazonaws.com/Napol-PLP.png', 1),
+(1, 'Akkari Coffee', 'A perfect blend of Arabica beans for a delightful morning.', 'https://coffeesbucket.s3.amazonaws.com/Arpeggio-Decaffeinato-PLP.png', 1),
+(8, 'Caffeine-Free Bliss', 'Enjoy the rich flavors without the caffeine buzz.', 'https://coffeesbucket.s3.amazonaws.com/ispirazione-venezia-2x.png', 7),
+(9, 'Decaf Harmony', 'Balanced flavors for a relaxed coffee experience.', 'https://coffeesbucket.s3.amazonaws.com/PlpRev-image-20-.png', 5),
+(10, 'Gentle Awakening', 'Start your day gently with this decaf choice.', 'https://coffeesbucket.s3.amazonaws.com/capriccio.png', 1),
+(11, 'Bold Awakening', 'A strong and invigorating cup to kickstart your day.', 'https://coffeesbucket.s3.amazonaws.com/cosi.png', 2),
+(12, 'Intense Espresso', 'Experience the bold flavors and rich aroma.', 'https://coffeesbucket.s3.amazonaws.com/volluto-XL.png', 1),
+(13, 'Dark Roast Delight', 'For those who crave the deep, intense coffee experience.', 'https://coffeesbucket.s3.amazonaws.com/Ristretto-PLP.png', 3),
+(14, 'Robust Blend', 'Full-bodied and intense, perfect for coffee enthusiasts.', 'https://coffeesbucket.s3.amazonaws.com/CapeTown-Lungo-PLP-13.png', 1),
+(15, 'Powerful Brew', 'Get energized with this intense and flavorful coffee.', 'https://coffeesbucket.s3.amazonaws.com/chiaro-2x.png', 2),
+(16, 'Classic Americano', 'A smooth and satisfying blend for coffee lovers.', 'https://coffeesbucket.s3.amazonaws.com/buenos-aires-lungo-2x.png', 3),
+(17, 'Morning Brew', 'Start your day right with this delicious Americano.', 'https://coffeesbucket.s3.amazonaws.com/stockholm-fortissio-lungo-XL.png', 2),
+(18, 'Americano Elegance', 'Enjoy the simplicity and elegance of a great Americano.', 'https://coffeesbucket.s3.amazonaws.com/tokyo-lungo-PLP.png', 1),
+(19, 'Bold Americano', 'Rich flavors and a bold kick in every cup.', 'https://coffeesbucket.s3.amazonaws.com/shangai-lungo-2x.png', 3),
+(20, 'Smooth Americano', 'Smoothness and richness in every sip.', 'https://coffeesbucket.s3.amazonaws.com/Vienna-Lungo-PLP.png', 2),
+(21, 'Organic Harmony', 'A harmonious blend of organic beans for a sustainable coffee experience.', 'https://coffeesbucket.s3.amazonaws.com/C-0889-before-PLP-318x318px.png', 5),
+(22, 'Pure Origins', 'Experience the pure flavors of ethically sourced, organic coffee beans.', 'https://coffeesbucket.s3.amazonaws.com/C-1061-Responsive-PLP.png', 7),
+(23, 'BIO Blend', 'An eco-friendly blend of organic beans for a guilt-free cup.', 'https://coffeesbucket.s3.amazonaws.com/C-1062-Responsive-PLP.png', 2),
+(24, 'Earthly Delight', 'Delight in the natural flavors of this organic coffee.', 'https://coffeesbucket.s3.amazonaws.com/C-1063-Responsive-PLP.png', 1),
+(25, 'Green Coffee', 'Refreshingly green and sustainably sourced for conscious coffee lovers.', 'https://coffeesbucket.s3.amazonaws.com/C-1060-Responsive-PLP.png', 1);
+
+

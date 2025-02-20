@@ -1,0 +1,122 @@
+#header{
+    width: 100vw;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    padding: 5px 10%;
+    font-family: Manrope;
+    position: fixed;
+    z-index: 10000;
+    margin: 0 auto;
+    top: 0px;
+}
+
+.header-buttons{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.header-buttons button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+}
+
+#header .logo{
+    cursor: pointer;
+}
+
+#header .logo img{
+    width: 150px;
+    height: 100%;
+    margin: 0 auto;
+    transform: translateX(-1.7vw);
+}
+
+#header .logo img:hover{
+   transition: 0.3s ease;
+}
+
+#header .nav-links {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform: translateX(4vw);
+    cursor: pointer;
+}
+
+#header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: 0.3s ease;
+}
+
+#header .nav-links li:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.nav-links button{
+    transform: translateX(2vw);
+}
+
+#header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;    
+    font-weight: bold;
+    transform: translateX(2vw);
+    transition: 0.3s ease;
+}
+
+#header .nav-links li a:hover{
+   cursor: pointer;
+}
+
+
+.nav-buttons{
+    transform: translateX(1.5vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+
+#header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#header .btn button:hover{
+    color: #68776d;
+    transform: scale(1.1);
+}
+
+.header-buttons{
+    transform: translateX(4vw);
+}

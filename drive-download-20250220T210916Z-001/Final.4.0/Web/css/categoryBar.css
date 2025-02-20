@@ -1,0 +1,57 @@
+#categoryBar {
+    justify-content: center;
+    width: 83vw;
+    height: 30px;
+    background-color: var(--mainColor);
+    text-align: center;
+    font-family: Manrope;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50px;
+}
+
+.top-coffees{
+    font-family: Manrope;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    color : #68776d;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#categoryBar:hover{
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+#categoryBar > #categoryBarFlex {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center; /* Centra en el eje y */
+    height: 100%; /* Ajusta la altura para que los elementos se centren verticalmente */
+}
+
+#categoryBarFlex div {
+  transition: 0.3s ease;
+  }
+
+#categoryBarFlex div:hover {
+    
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+/*Titular de los cafés y su menú*/
+.top-coffees{
+    font-family: Manrope;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    color : #68776d;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
